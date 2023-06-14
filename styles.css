@@ -6,19 +6,15 @@
 
 html {
  max-width: 1980px;
- margin: 0 auto;
+
 
   
 }
 body{
   display: flex;
   justify-content: center;
-
-}
-
-#shopping {
-display: flex;
-flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 #logo-container{
@@ -34,11 +30,21 @@ height: auto;
 
 }
 
+#shopping-cont {
+  display: flex;
+
+
+}
+
+#shopping{
+  flex-wrap: wrap;
+}
+
+
 #shopping > li {
   flex-basis: calc(25% - 10px);
   margin-right: 10px;
-  justify-content: center;
-  align-items: center;
+ 
   text-decoration-style: none;
   list-style: none;
 }
